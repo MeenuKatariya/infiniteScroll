@@ -1,13 +1,72 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.grid {
+  width: 300px;
+  margin-left: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+ 
+  /* grid-auto-rows: minmax(50px, auto); */
+}
+
+.infiniteText{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+.title{
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 2px;
+  margin-left: 7px;
+}
+
+.pricegrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3px;
+  width:200px;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-left: 7px;
+
+}
+.rating{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+  width:150px
+}
+.rating button{
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left:10px;
+  padding-right: 10px;
+  margin-left: 7px;
+  background-color: green;
+  border: none;
+  outline:none;
+  color:white;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 4px;
+
+}
+.rating p{
+  font-size: 20px;
+  margin-top: 0px;
 }
